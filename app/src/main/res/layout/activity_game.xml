@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout android:id="@+id/linearLayoutSub"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="18px"
+                android:textSize="22sp"
+                android:padding="25px"
+                android:textStyle="bold"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/Eq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:padding="20px"
+                android:textSize="24sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Eq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:padding="20px"
+                android:textSize="24sp"
+                android:visibility="visible"></TextView>
+
+        </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/Answer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:layout_margin="40px">
+        </TextView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/greaterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="@string/greater"></Button>
+
+        <Button
+            android:id="@+id/equalBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15px"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="@string/equal"></Button>
+
+        <Button
+            android:id="@+id/lessBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15px"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="@string/less"></Button>
+
+    </TableRow>
+    </LinearLayout>
+</LinearLayout>
